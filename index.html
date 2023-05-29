@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <title>Validation App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Validation Application</h2>
+      <div class="main-validation">
+        <label for="name">Enter Full Name</label>
+        <input placeholder="John Doe" type="text" name="name" id="input-name" />
+        <label for="zip">Enter ZIP Code</label>
+        <input placeholder="1000" type="text" name="zip" id="input-zipCode" />
+        <label for="email">Enter Email</label>
+        <input
+          placeholder="example@gmial.com"
+          type="email"
+          name="email"
+          id="input-email"
+        />
+        <label for="phone">Enter Mobile Number</label>
+        <input
+          placeholder="+8801333333333"
+          type="text"
+          name="phone"
+          id="input-phoneNumber"
+        />
+        <br />
+        <button id="handle-submit">Validate</button>
+      </div>
+      <div id="show-output"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
