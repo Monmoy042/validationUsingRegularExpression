@@ -16,7 +16,7 @@ const clearInputField = () => {
 const showOutput = (content) => {
   let div = document.getElementById("show-output");
   let p = document.createElement("p");
-  p.textContent = `This is a ${content}`;
+  p.textContent = content;
   div.appendChild(p);
 };
 
@@ -32,10 +32,10 @@ const informationValidate = () => {
   const validateInfo = (regx, phoneNumber, validText) => {
     var result = regx.test(phoneNumber);
     if (result == true) {
-      showOutput(validText);
+      showOutput(`This is a ${validText}`);
       console.log(`This is a ${validText}`);
     } else {
-      showOutput(validText);
+      showOutput(`This is not ${validText}`);
       console.log(`This is not a ${validText}`);
     }
   };
