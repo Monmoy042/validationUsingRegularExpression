@@ -35,6 +35,7 @@ const informationValidate = () => {
       showOutput(validText);
       console.log(`This is a ${validText}`);
     } else {
+      showOutput(validText);
       console.log(`This is not a ${validText}`);
     }
   };
